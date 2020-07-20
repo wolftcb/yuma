@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Grand+Hotel");
+
+.font{
+	--ion-font-family:'Grand Hotel';
+    font-family: var(--ion-font-family) !important;
+    color: black;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.margine-card{
+    height: 20px;
+}

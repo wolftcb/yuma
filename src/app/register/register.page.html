@@ -1,0 +1,73 @@
+<ion-content>
+  <ion-grid class="grid1">
+  
+    <ion-row class="row1">
+      <ion-col class="img-container">
+        <img src="assets/logo.jpg" >
+      </ion-col>
+  </ion-row>
+  
+      <ion-row class="row2">
+          <ion-col>
+  
+          </ion-col>
+      </ion-row>
+  
+  </ion-grid>
+  
+  <ion-slide>
+      <div class="contaier-login">
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                      <h1>Benvenuto</h1>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-list>
+  
+                          <ion-item>
+                              <ion-icon name="person" class="icon-login"></ion-icon>
+                              <ion-input type="text" #email required></ion-input>
+                          </ion-item>
+                          <br />
+                        
+                          <ion-item>
+                              <ion-icon name="lock" class="icon-login"></ion-icon>
+                              <ion-input name="name" type="name" required placeholder="Nome"></ion-input>
+                          </ion-item>
+                          <br />
+                        
+                          <ion-item>
+                              <ion-icon name="lock" class="icon-login"></ion-icon>
+                              <ion-input name="cognome" type="cognome" required placeholder="Cognome"></ion-input>
+                          </ion-item>
+                          <br />
+                          <ion-item>
+                              <ion-icon name="lock" class="icon-login"></ion-icon>
+                              <ion-input type="password" #password required></ion-input>
+                          </ion-item>
+                        
+  
+                      </ion-list>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                    <ion-button type="submit" (click)="signUp(email, password)" expand="block">Register</ion-button>
+
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-label>
+                          <ion-button expand="block" fill="outline" routerLink="/login">Torna login</ion-button>
+
+                      </ion-label>
+                  </ion-col>
+              </ion-row>
+          </ion-grid>
+      </div>
+  </ion-slide>
+</ion-content>

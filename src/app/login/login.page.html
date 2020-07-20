@@ -1,0 +1,103 @@
+<ion-content>
+
+  <ion-grid class="grid1">
+  
+    <ion-row class="row1">
+      <ion-col class="img-container">
+        <img src="assets/logo.jpg" >
+      </ion-col>
+  </ion-row>
+  
+      <ion-row class="row2">
+          <ion-col>
+  
+          </ion-col>
+      </ion-row>
+  
+  </ion-grid>
+  
+  <ion-slide>
+      <div class="contaier-login">
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                      <h1>Benvenuto</h1>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-list>
+  
+                          <ion-item>
+                              <ion-icon name="person" class="icon-login"></ion-icon>
+                              <ion-input type="text" #email required></ion-input>
+                          </ion-item>
+                          <br />
+                        
+                       
+                          <ion-item>
+                              <ion-icon name="lock" class="icon-login"></ion-icon>
+                              <ion-input type="password" #password required></ion-input>
+
+                          </ion-item>
+                        
+  
+                      </ion-list>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                    <ion-button type="submit" (click)="logIn(email, password)" expand="block">Login</ion-button>
+
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-label>
+                          <ion-button expand="block" fill="outline" routerLink="/register">Registrati</ion-button>
+
+                      </ion-label>
+                  </ion-col>
+              </ion-row>
+          </ion-grid>
+      </div>
+  </ion-slide>
+
+<!--
+  <form class="form" [formGroup]="validations_form" (ngSubmit)="loginUser(validations_form.value)">
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Email</ion-label>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <div class="validation-errors">
+        <ng-container *ngFor="let validation of validation_messages.email">
+          <div class="error-message"
+            *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+            {{ validation.message }}
+          </div>
+        </ng-container>
+      </div>
+  
+      <ion-item>
+        <ion-label position="floating" color="primary">Password</ion-label>
+        <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+      </ion-item>
+      <div class="validation-errors">
+        <ng-container *ngFor="let validation of validation_messages.password">
+          <div class="error-message"
+            *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+            {{ validation.message }}
+          </div>
+        </ng-container>
+      </div>
+  
+      <ion-button class="submit-btn" type="submit" [disabled]="!validations_form.valid">Log In</ion-button>
+  
+      <label class="error-message">{{errorMessage}}</label>
+    </form>
+    <p class="go-to-register">
+      No account yet? <a (click)="goToRegisterPage()">Create an account.</a>
+    </p>
+
+    -->
